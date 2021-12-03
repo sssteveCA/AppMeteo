@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+    </group>
+    <item android:title="Ricerca per">
+        <menu>
+            <item
+                android:id="@+id/nav_luogo"
+                android:icon="@android:drawable/ic_menu_search"
+                android:title="Luogo" />
+            <item
+                android:id="@+id/nav_coordinate"
+                android:icon="@android:drawable/ic_menu_search"
+                android:title="Coordinate geografiche" />
+            <item
+                android:id="@+id/nav_zip"
+                android:icon="@android:drawable/ic_menu_search"
+                android:title="Codice postale" />
+            <item
+                android:id="@+id/nav_zoneR"
+                android:icon="@android:drawable/ic_menu_search"
+                android:title="Zona dentro rettangolo" />
+            <item
+                android:id="@+id/nav_zoneC"
+                android:icon="@android:drawable/ic_menu_search"
+                android:title="Zona dentro cerchio" />
+        </menu>
+    </item>
+    <item android:title="Esci">
+        <menu>
+            <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit_to_app"
+            android:title="Esci dall'app"
+            />
+        </menu>
+    </item>
+</menu>

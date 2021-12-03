@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_areaR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:padding="5sp"
+        android:text="Inserisci le coordinate per delimitare un'area rettangolare"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <EditText
+        android:id="@+id/et_areaR_xl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_areaR"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Punto longitudine a sinistra"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/et_areaR_yb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_areaR_xl"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Punto latitudine in basso"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/et_areaR_xr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_areaR_yb"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Punto longitudine a destra"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/et_areaR_yt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_areaR_xr"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Punto latitudine in alto"
+        android:inputType="numberSigned" />
+
+    <ListView
+        android:id="@+id/lv_areaR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bt_areaR"
+        android:layout_marginTop="4dp" />
+
+    <Button
+        android:id="@+id/bt_areaR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_areaR_zoom"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="4dp"
+        android:text="CERCA" />
+
+    <EditText
+        android:id="@+id/et_areaR_zoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_areaR_yt"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Livello di zoom (da 0 a 16)"
+        android:inputType="number" />
+</RelativeLayout>
