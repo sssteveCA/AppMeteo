@@ -23,6 +23,7 @@ import com.example.appmeteo.ui.lista.Luogo;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.List;
 
@@ -62,6 +63,14 @@ public class VolleyRequest implements Response.Listener,Response.ErrorListener {
     public void onErrorResponse(VolleyError error) {
         //Response.ErrorListener
         Log.d("VolleyRequest","onErrorResponse");
+        /*if(error.networkResponse.data != null){
+            try {
+                String body = new String(error.networkResponse.data,"UTF-8");
+                Log.d("VolleyRequest","onErrorResponse messaggio => "+body);
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+        }*/
         progressBar.setVisibility(View.GONE);
         String msg = "Errore";
         if(error instanceof ParseError){
