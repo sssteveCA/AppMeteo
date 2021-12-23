@@ -1,2 +1,1 @@
-Questa applicazione per Android interagisce con le API di https://openweathermap.org/ 
-e consente di ottenere informazioni sulla situazione metereologica di una o più località.
+This application for Android interacts with the API of https://openweathermap.org/ and allows you to obtain information on the weather situation of one or more locations.
